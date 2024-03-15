@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+:root {
+    --nav-bg-color: rgb(119, 9, 28);
+    --white: #fff;
+    --gray: #B2B2B2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 270px;
+}
+
+.bg-red {
+    background-color: var(--nav-bg-color);
+}
+
+.bg-gray {
+    background-color: var(--gray);
+}
+
+.font-gray {
+    color: var(--gray);
+}
+
+.transparent {
+    visibility: hidden;
+}
+
+#navbar .container {
+    height: 85px;
+}
+
+.empty-space {
+    width: 240px;
+}
+
+.row {
+    width: 54%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-link-item {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 10px 0;
+    margin-bottom: 1px;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-link-item:hover {
+    border-bottom: 3px solid var(--white);
+}
+
+.nav-search {
+    background-color: var(--white);
+    width: 42rem;
+    height: 36px;
+    border-radius: 18px;
+}
+
+#nav-search-item {
+    background: transparent;
+    border: none;
+    height: inherit;
+    width: 85%;
+    border-radius: inherit;
+    margin-left: 25px;
+    font-size: 1.3rem;
+}
+
+#nav-search-item:focus {
+    outline: none;
+}
+
+i.fa-magnifying-glass {
+    font-size: 15px;
+    color: var(--nav-bg-color);
+}
+
+img#logo {
+    height: 90%;
+    position: relative;
+    left: -20px;
+    top: 4px;
+}
+
+#login {
+    position: relative;
+    left: 20px;
+    top: 4px;
+}
+
+.header p {
+    font-size: 1.3rem;
+}
+
+.header h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #F2F1EB;
+}
+
+.header h4 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #F2F1EB;
+}
+
+.conteiner-films {
+    width: 50%;
+    margin: auto;
+}
+
+.conteiner-films .header h4 {
+    display: inline-block;
+    width: calc(60% - 2px);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #F2F1EB;
+}
+
+.card {
+    height: 240px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: -4px 11px 79px -23px rgba(0,0,0,0.31);
+    margin: 7px 0;
+}
+
+.row-left {
+    display: inline-block;
+    width: calc(60% - 2px);
+    vertical-align: top;
+}
+
+.row-right {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding-left: 1rem;
+}
+
+.poster {
+    display: inline-block;
+    width: 170px;
+    position: relative;
+}
+
+.poster img {
+    position: absolute;
+    left: calc(50% - 73px);
+    top: calc(50% - 113px);
+    background-position: center;
+    border-radius: 5px;
+}
+
+.film-infos {
+    display: inline-block;
+    width: calc(100% - 172px);
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+
+.film-infos .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.film-infos .info .base-infos .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0.3rem 0;
+}
+
+.film-infos .info .base-infos .original-name {
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 0;
+    margin: 0.3rem 0;
+}
+
+.film-infos .info .base-infos .kind {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0.3rem 0;
+}
+
+.film-infos .rate * {
+    margin: 0.3rem 0;
+    text-align: end;
+}
+
+.film-infos .rate .rate-star {
+    display: flex;
+}
+
+.film-infos .rate .rate-star i {
+    color: #FF9843;
+    font-size: 1.3rem;
+    margin-right: 0.3rem;
+}
+
+.film-infos .rate .rate-star p {
+    font-size: 1.3rem;
+}
+
+.film-infos .extra-infos {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.film-infos .extra-infos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.film-infos .extra-infos div p {
+    padding: 0.3rem;
+    font-weight: 300;
+}
+
+.film-infos .statement {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.filters .form-row select,
+.filters .form-radio select {
+    display: block;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+.filters .form-row,
+.filters .form-radio {
+    margin-bottom: 10px;
+}
+
+.filters .form-row .form-label {
+    font-size: 1.2rem;
+}
+
+.filters .form-row .select-item,
+.filters .form-radio .select-item {
+    outline: none;
+    border: 1px solid var(--gray);
+    border-radius: 3px;
+    font-size: 1.2rem;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+.select-option-item {
+    font-size: 1.2rem;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.radio {
+    margin: 10px 0;
+}
+
+.filters .form-radio label {
+    position: relative;
+    top: 1px;
+    padding-right: 1.7rem;
+}
+
+.filters .form-radio .form-label {
+    position: relative;
+    left: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.filters .filter-button {
+    width: 100%;
+    height: 35px;
+    color: var(--white);
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.filters .filter-button:hover {
+    cursor: pointer;
+    color: var(--gray);
+}
+
+.kind-buttons-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.kind-button {
+    display: inline-block;
+    background: transparent;
+    color: var(--gray);
+    font-size: 1.2rem;
+    border: 1px solid var(--gray);
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    padding: 11px 0;
+    margin: 3px 3px;
+}
+
+.btn-sm {
+    width: 90px;
+}
+
+.btn-md {
+    width: 150px;
+}
+
+a.kind-link {
+    display: inline-block;
+    width: 90%;
+    text-decoration: none;
+    margin: 0.3rem;
+    border: 1px solid var(--gray);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: -4px 11px 79px -23px rgba(0,0,0,0.31);
+}
+
+a.kind-link .kind-name {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+}
+
+a.kind-link .kind-name:hover {
+    color: blue;
+}
+
+footer {
+    margin: 100px;
+}
+
